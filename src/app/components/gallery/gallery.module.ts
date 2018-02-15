@@ -6,6 +6,9 @@ import { galleryRouter } from './gallery.router';
 import { ImagedetailsComponent } from './imagedetails/imagedetails.component';
 import { RouterModule } from '@angular/router';
 import { SharedModuleModule } from '../shared-module/shared-module.module';
+import { SingleimgComponent } from './singleimg/singleimg.component';
+import { Singleimg2Component } from './singleimg2/singleimg2.component';
+
 
 @NgModule({
   imports: [
@@ -13,6 +16,6 @@ import { SharedModuleModule } from '../shared-module/shared-module.module';
     galleryRouter,
     SharedModuleModule
   ],
-  declarations: [GalleryComponent, ImagedetailsComponent]
+  declarations: [GalleryComponent, ImagedetailsComponent, SingleimgComponent, Singleimg2Component]
 })
 export class GalleryModule { }

@@ -1,3 +1,11 @@
 <p>
-  imagedetails works!
+  imagedetails works! {{id}}
 </p>
+
+<p>
+  <a [routerLink]="['singleImagesInfo']">Child One</a> &nbsp; &nbsp; | &nbsp; &nbsp;
+  <a [routerLink]="['singleImagesInfo2']">Child Two</a>
+</p>
+
+
+<router-outlet></router-outlet>

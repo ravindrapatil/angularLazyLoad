@@ -1,0 +1,15 @@
+<div class="panel panel-success">
+  <div class="panel-heading">Gallery Component</div>
+  <div class="panel-body">Open the chrome dev tool and go to Network tab.
+    Navigate to other page to see lazy load module works. You will see it load the *.chunk.js file when you visit that page for forst time.
+    <p><a [routerLink]="['imageDetails']">Router</a></p>
+  </div>
+</div>
+
+<br />
+<button class="btn" (click)="increaseCounter()">Increase Counter</button>
+<br /><br />
+
+{{counterService.counter}}
+
+<app-comman></app-comman>

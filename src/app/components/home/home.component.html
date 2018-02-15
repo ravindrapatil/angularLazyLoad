@@ -1,0 +1,33 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">Home Component</div>
+  <div class="panel-body">Open the chrome dev tool and go to Network tab.
+    Navigate to other page to see lazy load module works. You will see it load the *.chunk.js file when you visit that page for forst time.</div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <!-- <ul>
+      <li *ngFor="let show of showsList"> -->
+        <!-- <p>{{show.show.network.name}}</p> -->
+        <!-- <p [innerHTML]='show.show.summary'></p>
+      </li>
+    </ul> -->
+    <button
+        class="btn btn-primary"
+        routerLink="/gallery">Log In</button>
+  </div>
+</div>
+
+<br/><br/><br/>
+
+<div class="row">
+  <div class="col-12">
+    <select [formControl]="control" [compareWith]="compareFn">
+      <option [ngValue]="option" *ngFor="let option of options">
+        {{option.label}}
+      </option>
+    </select>
+  </div>
+</div>
+
+<app-comman></app-comman>
